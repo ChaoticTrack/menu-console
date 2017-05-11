@@ -12,9 +12,6 @@ public:
     menu();
     ~menu();
 
-    void printError(std::string error); // error message due to illegal operation
-    bool doesIndexExist(int index);
-
     // Getters
     std::string getTitle();
     std::vector<std::string> getItems();
@@ -41,6 +38,9 @@ public:
 private:
     std::string title;
     std::vector<std::string> items;
+
+    void printError(std::string error); // error message due to illegal operation
+    bool doesIndexExist(int index);
 };
 
 #endif // MENU_H
