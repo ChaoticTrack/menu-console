@@ -3,25 +3,23 @@ A tiny utility for printing lists of items in a console app.
 
 ## Commands
 ```c++
+    // Initialize object
+    menu myMenu;
+    
     // Getters
-    std::string getTitle();
-    std::vector<std::string> getItems();
+    myMenu.getTitle(); // returns string
+    myMenu.getItems(); // returns vector of strings
 
     // Setters
-    void reset();
-    void setTitle(std::string title);
+    myMenu.reset();
+    myMenu.setTitle("string");
 
     // Item Manipulation
-    void pushItem(std::string item);
-    void popItem();
+    myMenu.pushItem("string");
+    myMenu.popItem();
 
     // Printers
-    void printItems(std::string type, std::string prefix);
-    void printItemsInline(std::string prefix); // inline
-    void printItemsBox(std::string prefix); // box
-    void printItemsList(std::string prefix); // default
-    void printItemsListUO(std::string prefix); // list_uo
-    void printItemsListO(std::string prefix); // list_o
+    myMenu.printItems("print type", "prefix"); // Types: inline, box, default, list_uo, list_o
 ```
 
 ## Example
