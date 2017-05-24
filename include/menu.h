@@ -29,11 +29,6 @@ public:
 
     // Printers
     void printItems(std::string type, std::string prefix);
-    void printItemsInline(std::string prefix); // inline
-    void printItemsBox(std::string prefix); // box
-    void printItemsList(std::string prefix); // default
-    void printItemsListUO(std::string prefix); // list_uo
-    void printItemsListO(std::string prefix); // list_o
 
 private:
     std::string title;
@@ -41,6 +36,13 @@ private:
 
     void printError(std::string error); // error message due to illegal operation
     bool doesIndexExist(int index);
+
+    // Printers
+    void printItemsInline(std::string prefix); // inline
+    void printItemsBox(std::string prefix); // box
+    void printItemsList(std::string prefix); // default
+    void printItemsListUO(std::string prefix); // list_uo
+    void printItemsListO(std::string prefix); // list_o
 };
 
 #endif // MENU_H
